@@ -1,0 +1,185 @@
+body{
+  background-image: url('https://i.gifer.com/origin/5d/5d52081cf463de10c09513559c305913_w200.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Georgia, serif;
+  min-height: 100vh;
+}
+
+h1{
+  color: Black;
+  text-align: center;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+hr{
+  border-color: red;
+}
+
+p{
+  color: gray;
+}
+
+
+p.Rou{
+  border: 3px solid darkred;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 24px;
+  white-space: pre-line;
+}
+
+p.Rou span:first-child{
+  color: Black;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+.current-games{
+  display: inline-block;
+  position: relative;
+}
+
+.current-games::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: darkred;
+  position: absolute;
+  bottom: -5px;
+}
+
+button{
+  position: relative;
+  width: 220px;
+  text-align: center;
+  border: 2px solid DarkRed;
+  padding: 15px 0;
+  background: transparent;
+  color: Black;
+  text-shadow: 0 0 0.80px Red;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+span{
+  background: DarkRed;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+
+.Box{
+  background: transparent;
+  padding: 10px;
+  border: 2px solid DarkRed;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(DarkRed);
+}
+
+
+  .Icons-Cont{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+    
+    .Icons-Cont i{
+      margin: 0 10px;
+    }
+    
+    
+          *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      
+         .Head{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        background: DarkRed;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+      }
+      
+      .Logo{
+        font-size: 32px;
+        color: Black;
+        text-decoration: none;
+        font-weight: 700;
+      }
+  
+      .navbar{
+        display: flex;
+        margin-left: 20px;
+      }
+  
+      .navbar a{
+        font-size: 18px;
+        color: White;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+      }
+  
+      .navbar a::before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width 0.3s ease-in-out;
+      }
+  
+      .navbar a:hover::before{
+        width: 100%;
+      }
+      
+      
+      
+      
+      
+      p.InfoRou{
+        background: transparent;
+  border: 3px solid darkred;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 24px;
+  white-space: pre-line;
+}
+
+
+.ImagesBox{
+  display: inline-block;
+  vertical-align: top;
+  background: transparent;
+  padding: 3px;
+  border: 2px solid DarkRed;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(139, 0, 0, 0.1);
+}
+
+.ImagesBox .Desc{
+  background: white;
+  padding: 10px;
+}
